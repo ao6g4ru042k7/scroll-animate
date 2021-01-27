@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>scrollInView</title>
+        <style>
+            body {
+                height: 2000px;
+            }
+            .box {
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                position: relative;
+                top: 1000px;
+                transition: all 3s;
+            }
+            .active {
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box box1" scroll-ani-class="active"></div>
+        <div class="box box2" scroll-ani-class="active"></div>
+        <script src="./scrollInWindow.js"></script>
+        <script>
+            scrollInWindow.init();
+        </script>
+    </body>
+</html>

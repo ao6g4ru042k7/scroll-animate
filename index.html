@@ -25,8 +25,13 @@
         <div class="box box1" scroll-ani-class="active"></div>
         <div class="box box2" scroll-ani-class="active"></div>
         <script src="./scrollInWindow.js"></script>
+        <script src="./scrollCustomEvent.js"></script>
         <script>
             scrollInWindow.init();
+            scrollCustomEvent.init();
+            scrollCustomEvent.add(document.querySelector('.box'),()=>{
+                console.log('test')
+            })
         </script>
     </body>
 </html>
